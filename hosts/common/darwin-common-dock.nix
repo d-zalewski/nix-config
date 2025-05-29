@@ -8,6 +8,7 @@
       "/Applications/Discord.app"
       "/Applications/WhatsApp.app"
       "/Applications/Mail.app"
+      "/Applications/Photos.app"
       "/Applications/Calendar.app"
       "/Applications/Notion.app"
       "/Applications/Music.app"

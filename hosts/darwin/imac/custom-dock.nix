@@ -2,14 +2,18 @@
 {
   system.defaults.dock = {
     persistent-apps = [
-      "/Applications/Firefox.app"
-      "/Applications/Google Chrome.app"
-      "/Applications/Telegram.app"
-      "/Applications/Obsidian.app"
-      "/Applications/Visual Studio Code.app"
-      "/Applications/OBS.app"
+      "/Applications/Google Chrome.app"     
+      "/Applications/Messages.app"
+      "/Applications/Signal.app"
+      "/Applications/Discord.app"
+      "/Applications/WhatsApp.app"
+      "/Applications/Mail.app"
+      "/Applications/Photos.app"
+      "/Applications/Calendar.app"
+      "/Applications/Notion.app"
+      "/Applications/Music.app"
       "/Applications/Ghostty.app"
-      "/Applications/iTerm.app"
+      "/Applications/Settings.app"
     ];
   };
 }
