@@ -26,11 +26,15 @@ in
     gh
     gnused
     go
+    htop
     iperf3    
     jetbrains-mono # font
     jq
     just
     kubectl
+    k9s
+    lazygit
+    lazydocker
     mc
     nerdfonts
     nmap

@@ -21,6 +21,10 @@ in
   };
 
   environment.systemPackages = with pkgs; [   
+    ## unstable
+    unstablePkgs.colmena
+
+    ## stable CLI
     pkgs.just
     pkgs.nix
   ];
@@ -99,7 +103,7 @@ in
       "Messenger" = 1480068668;
       "WhatsApp Messenger" = 310633997;
       "Pixelmator Pro" = 1289583905;
-      "Usplash Wallpapers" 1284863847;
+      "Usplash Wallpapers" = 1284863847;
      
       "Keynote" = 409183694;
       "Numbers" = 409203825;
@@ -131,12 +135,12 @@ in
     NSGlobalDomain.ApplePressAndHoldEnabled = false;
     NSGlobalDomain.InitialKeyRepeat = 25;
     NSGlobalDomain.KeyRepeat = 2;
-    NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
     NSGlobalDomain.NSWindowShouldDragOnGesture = true;
     NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
     LaunchServices.LSQuarantine = false; # disables "Are you sure?" for new apps
     loginwindow.GuestEnabled = false;
     finder.FXPreferredViewStyle = "Nlsv";
+    controlcenter.BatteryShowPercentage = true;
   };
 
   system.defaults.CustomUserPreferences = {
@@ -150,7 +154,7 @@ in
         FXDefaultSearchScope = "SCcf";
         DisableAllAnimations = true;
         NewWindowTarget = "PfDe";
-        NewWindowTargetPath = "file://$\{HOME\}/Desktop/";
+        NewWindowTargetPath = "file://$\{HOME\}/Downloads/";
         AppleShowAllExtensions = true;
         FXEnableExtensionChangeWarning = false;
         ShowStatusBar = true;
@@ -181,7 +185,7 @@ in
         SortDirection = 0;
       };
       "com.apple.Safari" = {
-        # Privacy: don’t send search queries to Apple
+        # Privacy: don't send search queries to Apple
         UniversalSearchEnabled = false;
         SuppressSearchSuggestions = true;
       };
@@ -208,6 +212,8 @@ in
         DisablePrintPreview = true;
         PMPrintingExpandedStateForPrint2 = true;
       };
+      "com.apple.AppleMultitouchTrackpad".Clicking = true;
+      "com.apple.driver.AppleBluetoothMultitouch.trackpad".Clicking = true;
   };
 
 }
