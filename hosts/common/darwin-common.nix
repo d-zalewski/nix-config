@@ -20,17 +20,8 @@ in
     hostPlatform = lib.mkDefault "${system}";
   };
 
-  environment.systemPackages = with pkgs; [
-    ## unstable
-    unstablePkgs.yt-dlp
-    unstablePkgs.get_iplayer
-    unstablePkgs.colmena
-
-    ## stable CLI
-    pkgs.comma
-    pkgs.hcloud
+  environment.systemPackages = with pkgs; [   
     pkgs.just
-    pkgs.lima
     pkgs.nix
   ];
 
@@ -72,21 +63,12 @@ in
       autoUpdate = true;
       upgrade = true;
     };
-    global.autoUpdate = true;
+    global.autoUpdate = true;    
     
-    taps = [
-      #"FelixKratz/formulae" #sketchybar
-    ];
     casks = [          
       "balenaetcher"
       "bambu-studio"     
-      "discord"    
-      "font-fira-code"
-      "font-fira-code-nerd-font"
-      "font-fira-mono-for-powerline"
-      "font-hack-nerd-font"
-      "font-jetbrains-mono-nerd-font"
-      "font-meslo-lg-nerd-font"
+      "discord"         
       "ghostty"
       "google-chrome"
       "iina"
@@ -113,6 +95,11 @@ in
       "Disk Speed Test" = 425264550;     
       "Microsoft Remote Desktop" = 1295203466;     
       "The Unarchiver" = 425424353;
+      "Reeder Classic" = 1529448980;
+      "Messenger" = 1480068668;
+      "WhatsApp Messenger" = 310633997;
+      "Pixelmator Pro" = 1289583905;
+      "Usplash Wallpapers" 1284863847;
      
       "Keynote" = 409183694;
       "Numbers" = 409203825;
