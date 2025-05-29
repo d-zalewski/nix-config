@@ -43,8 +43,8 @@
 
   programs.git = {
     enable = true;
-    userEmail = "alexktz@gmail.com";
-    userName = "Alex Kretzschmar";
+    userEmail = "dominik@zalewski.io";
+    userName = "Dominik Zalewski";
     diff-so-fancy.enable = true;
     lfs.enable = true;
     extraConfig = {
@@ -106,7 +106,6 @@
 
   programs.bat.enable = true;
   programs.bat.config.theme = "Nord";
-  #programs.zsh.shellAliases.cat = "${pkgs.bat}/bin/bat";
 
   programs.neovim = {
     enable = true;
@@ -148,41 +147,4 @@
 
   programs.zoxide.enable = true;
 
-  programs.ssh = {
-    enable = true;
-    extraConfig = ''
-  StrictHostKeyChecking no
-    '';
-    matchBlocks = {
-      # ~/.ssh/config
-      "github.com" = {
-        hostname = "ssh.github.com";
-        port = 443;
-      };
-      "*" = {
-        user = "root";
-      };
-      # wd
-      "dev" = {
-        hostname = "100.68.216.79";
-        user = "alex";
-      };
-      # lancs
-      # "e elrond" = {
-      #   hostname = "100.117.223.78";
-      #   user = "alexktz";
-      # };
-      # # jb
-      # "core" = {
-      #   hostname = "demo.selfhosted.show";
-      #   user = "ironicbadger";
-      #   port = 53142;
-      # };
-      # "status" = {
-      #   hostname = "hc.ktz.cloud";
-      #   user = "ironicbadger";
-      #   port = 53142;
-      # };
-    };
-  };
 }
