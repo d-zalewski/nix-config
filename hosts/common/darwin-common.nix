@@ -85,7 +85,6 @@ in
       "signal"    
       "steam"
       "tailscale"
-      "wireshark"     
       "visual-studio-code"
       "vlc"
       

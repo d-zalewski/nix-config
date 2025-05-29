@@ -16,4 +16,11 @@
       "/Applications/Settings.app"
     ];
   };
+
+  system.defaults.CustomUserPreferences = {      
+      "com.apple.dock" = {      
+        orientation = "bottom";
+        tilesize = 36;
+      }; 
+  }; 
 }
