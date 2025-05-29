@@ -67,7 +67,8 @@ in
     
     casks = [          
       "balenaetcher"
-      "bambu-studio"     
+      "bambu-studio"   
+      "cursor"  
       "discord"         
       "ghostty"
       "google-chrome"
