@@ -20,6 +20,12 @@ switch target_host=hostname: (build target_host)
   @echo "switching to new config for {{target_host}}"
   ./result/sw/bin/darwin-rebuild switch --flake ".#{{target_host}}"
 
+# Update all flake inputs and switch to the new configuration
+[macos]
+update target_host=hostname:
+  @echo "Updating flake inputs..."
+  nix flake update
+  just switch target_host={{target_host}}
 
 # Garbage collect old OS generations and remove stale packages from the nix store
 gc generations="5":
